@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "094443c7-5588-4c70-a4fd-9d810b2d790f")
+		(uuid "41c5dbbd-5b71-4ce0-bf0e-d83aedb87c5a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -453,7 +453,7 @@
 		(remove_unused_layers no)
 		(uuid "263eaa6b-8846-4011-a2dc-f3b8d194320a")
 	)
-	(pad "8" thru_hole rect
+	(pad "8" thru_hole oval
 		(at -3.805 -26.5 90)
 		(size 1.7 1.7)
 		(drill 1)
@@ -486,4 +486,15 @@
 		(uuid "04b31d38-4a04-455d-9a7f-e801d03cfa79")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/asylum.pretty/LCD.step"
+		(offset
+			(xyz 3.75 -24.85 24.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -0 -0)
+		)
+	)
 )
