@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7b5bb5f1-444c-492e-b66e-ef1c2c5edc17")
+		(uuid "39861e6a-7c07-4ca7-bddd-24c89dff0333")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -530,7 +530,7 @@
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libs/asylum.pretty/C3-mini.step"
 		(offset
-			(xyz -12.7 -18.9 0.5)
+			(xyz -12.7 -18.9 3.5)
 		)
 		(scale
 			(xyz 1 1 1)
