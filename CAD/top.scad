@@ -20,11 +20,11 @@ module case() {
 		translate([0, 0, WALL_THICKNESS + 0.0001]) PCB_Hole();
 
 		// Wemos
-		translate([CASE_WIDTH / 2, -3-USB_WIDTH/2, USB_DEPTH/2])
+		translate([CASE_WIDTH / 2, 5 - USB_WIDTH/2, USB_DEPTH/2])
 		cube([30, USB_WIDTH, USB_DEPTH], true);
 
 		// Battery
-		translate([-CASE_WIDTH / 2, 10+USB_WIDTH/2, USB_DEPTH/2])
+		translate([-CASE_WIDTH / 2, 10 + USB_WIDTH/2, USB_DEPTH/2])
 		cube([30, USB_WIDTH, USB_DEPTH], true);
 	}
 }
