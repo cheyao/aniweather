@@ -152,7 +152,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d40fffcf-ce43-4ef5-8349-8806028c6322")
+			(uuid "a740b85f-e830-4676-8615-313f417e73a7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +2466,7 @@
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "924cce52-c6b0-4a73-a582-de95b7de1f1e")
+			(uuid "ac65f5ac-59f3-4174-b432-911704d9140c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,7 +3062,7 @@
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a9ac6e0-6d8b-4efd-afc5-166f5e7bd9ed")
+			(uuid "25435e87-112b-4837-b783-9bcc4a95d416")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3272,7 +3272,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R3"
-			(at 5.08 -2.37 360)
+			(at 5.08 -2.37 0)
 			(layer "F.SilkS")
 			(uuid "094a2a06-65a8-4a7f-9f2e-5cdf3ba4d23e")
 			(effects
@@ -3283,7 +3283,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 5.08 2.37 360)
+			(at 5.08 2.37 0)
 			(layer "F.Fab")
 			(uuid "2dbbfb93-0f9e-426f-9408-500288314703")
 			(effects
@@ -3294,10 +3294,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 360)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e8cf46af-f82d-48c7-b5b5-8f2ee28a66d2")
+			(uuid "826c9205-8ab2-4b3f-972f-6487ce7d73ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3497,7 +3497,7 @@
 			(uuid "6014d319-d3f6-4d1d-bf1f-bb746594fc80")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 5.08 0 360)
+			(at 5.08 0 0)
 			(layer "F.Fab")
 			(uuid "a57469ff-f346-416e-946b-eaec51a6bbfd")
 			(effects
@@ -3572,7 +3572,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c7b756d4-4c53-4e3c-9532-1d5b3bd426ae")
+			(uuid "deb7a419-2b20-4dda-9a8a-2025fcf9cf18")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +4110,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e1c8a432-9178-43b0-9739-23ba6d1c2a5f")
+			(uuid "c30a12c6-3f72-4bff-8412-1919c5badc37")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4385,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "89c20686-271a-4683-aa6d-f3e89181afc2")
+			(uuid "c3231f50-323f-4e3a-97d6-3b59f9ca4f9c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4628,7 +4628,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0f1b0006-404b-492d-9236-89a2a04d5007")
+			(uuid "d3353a7d-c635-4e64-a5d8-37e622daf9cd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,7 +4741,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5b53bbfd-83e8-445a-982a-22cd1370e2cd")
+			(uuid "e08c69fc-919d-484f-ba6c-cdd21e8aaa57")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5333,7 +5333,7 @@
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4a9ff970-ebdb-4e85-be84-d53a6de513bd")
+			(uuid "5a9c2a39-f0a5-4086-95d6-c7807e88d505")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,7 +5568,7 @@
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0512eb04-62c1-441c-870b-e7ad92bafcc2")
+			(uuid "b5da7089-bc6d-411e-b44d-5e766e0fdd69")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5858,7 +5858,7 @@
 			(net 4 "+3.3V")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2d059518-246c-4b23-9162-17ee2fb08401")
+			(uuid "cf6536fb-e582-489f-8a34-f677dec76f48")
 		)
 		(pad "2" thru_hole circle
 			(at 0 4.5)
@@ -5880,7 +5880,7 @@
 			(net 22 "Net-(U2-A5)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5a04acb3-4f0a-41a0-a1d4-9725aa684547")
+			(uuid "bb216fd9-322e-4f16-a091-0301b028f68b")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
@@ -5927,7 +5927,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b24cf779-77ed-4bfa-a387-d7f5b59bd35f")
+			(uuid "8f07a9f3-394c-4d54-afec-fb9a71d076ae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6162,7 +6162,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fa5e104a-9053-40fd-949e-55a5b37f793e")
+			(uuid "f6703e3e-e83f-459d-909a-cbfc2a8b3c77")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6275,7 +6275,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "abaa7292-ca32-4342-b597-10db34094e79")
+			(uuid "910249aa-c0b5-4b3e-825a-d4a692ea6bd9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6510,7 +6510,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bf1627ec-5afd-418f-9267-e12b919af316")
+			(uuid "c379cd61-3357-4472-bfaa-f7ff261e95fc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6623,7 +6623,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a3e30d40-340e-4c6c-ae27-6658562b49df")
+			(uuid "570c7c5b-251c-438f-8d75-90c6aedc7fbd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6738,7 +6738,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3578bb59-7d4b-4bb5-a84d-0d452da825cc")
+			(uuid "0959bd79-1fee-4c4a-a079-f492cabc6d7b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6951,7 +6951,7 @@
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C9"
-			(at 1.25 2.5 360)
+			(at 1.25 2.5 0)
 			(layer "B.SilkS")
 			(uuid "f4e4d52b-2c8e-40aa-bf47-085a9f9ecf47")
 			(effects
@@ -6963,7 +6963,7 @@
 			)
 		)
 		(property "Value" "Tiny"
-			(at 1.25 -2.5 360)
+			(at 1.25 -2.5 0)
 			(layer "B.Fab")
 			(uuid "9da6ab5e-14b8-4b75-8e02-17ee49baf13e")
 			(effects
@@ -6975,16 +6975,15 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 360)
-			(layer "B.Fab")
+			(at 0 0 0)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "b814a0bc-ba6c-46f5-a41a-5f0ba763a7fe")
+			(uuid "7ff6845a-f82c-4814-a872-91810542d453")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
-				(justify mirror)
 			)
 		)
 		(property "Datasheet" ""
@@ -7141,7 +7140,7 @@
 			(uuid "136a258d-46ee-4366-9dc5-1aef442e9236")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "B.Fab")
 			(uuid "7affd4bd-9d0b-4031-b3de-fa2e625995a1")
 			(effects
@@ -7219,7 +7218,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8e8d048c-cffd-430f-9612-6db401ce7fae")
+			(uuid "997589f5-6cb7-4ff4-b00c-263df445487c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7459,7 +7458,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc7beda3-af5b-44ae-a6e6-ab90c6eb83d8")
+			(uuid "0338f102-fdb6-480e-945f-8cba13ac9420")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7679,7 +7678,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "615d7309-7d44-4b4e-a8e7-f18db12c41f5")
+			(uuid "3f946756-2ef0-41fa-8a3d-e6d61fea517b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7880,7 +7879,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "98d4bbc9-e5ba-4bda-ab8a-0c2338ffb1db")
+			(uuid "1f3995e1-b804-4692-a8c7-79dac3c7015e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8160,7 +8159,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dee1b1f0-54b6-4acc-bf73-f6bd98722417")
+			(uuid "cebb8f2b-2a3c-47ef-9528-6926e636c198")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8553,7 +8552,7 @@
 			(net 15 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "074f5d20-18ad-463a-bd8f-e333297013ea")
+			(uuid "6b675bf7-b9ed-4286-9492-3f80a796b63f")
 		)
 		(pad "11" smd custom
 			(at 0 0)
@@ -8578,7 +8577,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "074f5d20-18ad-463a-bd8f-e333297013ea")
+			(uuid "be2410e1-a752-4974-84ed-eb7a5a615502")
 		)
 		(pad "11" thru_hole circle
 			(at 0 0.95)
@@ -8589,7 +8588,7 @@
 			(net 15 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "074f5d20-18ad-463a-bd8f-e333297013ea")
+			(uuid "b52a4b60-4746-43f8-b985-3d6235840f22")
 		)
 		(pad "11" thru_hole circle
 			(at 0.575 0)
@@ -8600,7 +8599,7 @@
 			(net 15 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "074f5d20-18ad-463a-bd8f-e333297013ea")
+			(uuid "97d24874-0c3e-4a53-abac-28d1f53fb15a")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_SON.3dshapes/Texas_DRC0010J.wrl"
@@ -8649,7 +8648,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a79522b5-dccf-4229-a112-8f36a3f55b63")
+			(uuid "e4f14e9b-666b-43f6-b636-04ade2e9fd77")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10976,7 +10975,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f173deee-34a2-4d14-baff-fe8538fc0acc")
+			(uuid "541ff8b7-0ec0-4016-9a0f-61731792b749")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11216,7 +11215,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c0f4f6a6-6cfe-49e8-8807-e2761f93cf83")
+			(uuid "8ccee359-8452-4f1a-af45-9bc9a2844f24")
 			(effects
 				(font
 					(size 1.27 1.27)
