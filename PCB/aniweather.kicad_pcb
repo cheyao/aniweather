@@ -123,7 +123,7 @@
 	(footprint "LOGO"
 		(layer "F.Cu")
 		(uuid "0c2dc717-25d0-4c41-9f76-937cda571728")
-		(at 69.2 98.725)
+		(at 140.25115 96.027339)
 		(property "Reference" "G2"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -152,7 +152,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e7bd44fc-6a49-41d5-9dd7-e061d0cc96d1")
+			(uuid "27f95f07-16ee-461a-9cea-c71c54fc0516")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +2466,7 @@
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0b17f18b-0395-4068-9e88-1f012e3feebc")
+			(uuid "3b3b176b-aa5e-4163-94b4-ab1e8ca7becb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,7 +3062,7 @@
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "806ae8b9-c7eb-4854-9a00-db34bcf4f409")
+			(uuid "64bd8cfc-8a11-4a3b-9b98-70e6705dc931")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,7 +3297,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "85b3cb50-c938-4318-81c0-a60b219c6989")
+			(uuid "3f91bdb0-5344-4fb4-85ad-f237b2242caf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3572,7 +3572,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "888b4b6c-a64a-443c-b924-a929cab3ca23")
+			(uuid "9d4cd002-2a4f-4902-abea-1ffb56a340c4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +4110,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "909ca4a4-ac06-470f-973c-3af4629475c3")
+			(uuid "0725474a-08e5-4c68-8144-4327fe902ed6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4385,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d948a54c-1e3f-4cb1-bc28-e638ef6afb77")
+			(uuid "1d9b5918-ad32-40c3-bd29-56d309b3b518")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4628,7 +4628,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "093a5511-97a9-4fdd-8dd9-454e828794d7")
+			(uuid "379e8d5c-2ba3-49b1-9ceb-07298d99b2a8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,7 +4741,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "339e10ea-c465-401d-bf96-c8b557a4a3bb")
+			(uuid "4286919f-e11c-4731-a784-c96e5e25ad98")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5333,7 +5333,7 @@
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ef6e699a-b5b7-4515-ad7f-92806439ec14")
+			(uuid "8dd05cd3-ff2b-4ef2-8789-3c8ec4507135")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5565,10 +5565,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 90)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6a887cc0-79e5-47fd-8f3d-63f15505cf82")
+			(uuid "4a31205a-e19b-4f66-8de6-0bb3d9f5875b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5902,7 +5902,7 @@
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C1"
-			(at 1.25 -2.5 360)
+			(at 1.25 -2.5 0)
 			(layer "F.SilkS")
 			(uuid "41946c68-9d78-4c2c-9777-cec939c4b2b0")
 			(effects
@@ -5913,7 +5913,7 @@
 			)
 		)
 		(property "Value" "Tiny"
-			(at 1.25 2.5 360)
+			(at 1.25 2.5 0)
 			(layer "F.Fab")
 			(uuid "e9ddd83e-fe4c-41f5-b589-e475d8688f42")
 			(effects
@@ -5924,10 +5924,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3ea00117-0f96-47be-9a76-dcca16ff022c")
+			(uuid "3ed2c1f3-41f6-4a9c-82ff-d208b5682ce9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6087,7 +6087,7 @@
 			(uuid "c44854fc-5338-4256-896d-6584cd9830d0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "9f8a6aa2-f2df-484d-a270-2707c38a6b27")
 			(effects
@@ -6162,7 +6162,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "60ac263d-9c26-475b-a06b-4ecce817c1e0")
+			(uuid "7adb8eec-220f-4165-b055-4c061ad88342")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6250,7 +6250,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R4"
-			(at 5.08 -2.37 360)
+			(at 5.08 -2.37 0)
 			(layer "F.SilkS")
 			(uuid "30041948-43e8-4678-a414-599b0bdd8d91")
 			(effects
@@ -6261,7 +6261,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 5.25 2.55 360)
+			(at 5.25 2.55 0)
 			(layer "F.Fab")
 			(uuid "8d3c8274-77d2-45a9-8a80-593d2a6ca24d")
 			(effects
@@ -6272,10 +6272,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 360)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "711ea188-9c41-42fd-a455-3febf35465e2")
+			(uuid "e7f70020-febe-419f-95a1-2f890d30cf80")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6475,7 +6475,7 @@
 			(uuid "2381d049-c26f-4832-be32-ba4970cc9b7a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 5.08 0 360)
+			(at 5.08 0 0)
 			(layer "F.Fab")
 			(uuid "3d47ceca-75fb-4e7e-b19b-1506579789cf")
 			(effects
@@ -6550,7 +6550,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c1b80028-f563-4561-9b26-1a743ea5b11e")
+			(uuid "3b50698f-fb61-46dc-8342-eae21024afac")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6785,7 +6785,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "21d9c0c1-ff40-49c0-ab38-6c0c9fd211bf")
+			(uuid "122532f4-405e-48e8-8ef9-5bc2426202c6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6898,7 +6898,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "495c76af-d3bb-4923-96e8-c05f53eecbbc")
+			(uuid "564fb69a-f721-4f90-9136-0171af64aafd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7011,7 +7011,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8648d623-e830-42a2-ae12-8d3bddc7bd43")
+			(uuid "ffdfb91a-b53d-41f2-bb3d-8e27d4750be9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7372,7 +7372,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a7c4bb7a-2db3-4761-a54e-c29b229b44d3")
+			(uuid "f86fa832-db1a-42d3-9452-dbb12144b731")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7612,7 +7612,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "502fca3d-4990-4cb8-b0bf-7c26373e8a5f")
+			(uuid "d66e1615-8557-4133-ad36-0c39e0008b6c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,7 +7852,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c7f100e4-0c89-44ba-8688-1c8ecc5ff6af")
+			(uuid "3c4e85b1-7620-4ab3-9dc6-43b6e95185a0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8092,7 +8092,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fedcd394-976e-4536-8af9-14c41d00cd70")
+			(uuid "b30bcd61-a90a-448b-93a0-c338dcc972e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8312,7 +8312,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f5e78aa0-2293-4a52-a3df-80ff1057df1d")
+			(uuid "2d549eeb-db06-4cbe-88ad-cf79d83756fe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8513,7 +8513,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d220633e-6443-4207-bf42-649f311c7366")
+			(uuid "bb75686f-d121-498d-9817-439b0d0d41f1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8793,7 +8793,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7f926b7f-ba71-422b-8e9f-a2381cde75ff")
+			(uuid "6f19f79b-4158-4c9b-813e-2c857e9b8886")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9251,7 +9251,7 @@
 	(footprint "LOGO"
 		(layer "B.Cu")
 		(uuid "dba684aa-f672-45bb-916f-8edfd1bee3ed")
-		(at 69.2 98.725 180)
+		(at 140.25115 96.027339 180)
 		(property "Reference" "G1"
 			(at 0 0 0)
 			(layer "B.SilkS")
@@ -9282,7 +9282,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4d5c4405-eef3-4fbc-982c-6dae480226f7")
+			(uuid "516f0cbc-b3e4-4aad-98f6-4209a352fe39")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11609,7 +11609,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fe1b0732-2b5d-450a-8f0d-6a12de50779c")
+			(uuid "e741e5ec-da67-4018-8711-b5515bde4c40")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11849,7 +11849,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "191f1d62-6ae8-4c49-8c62-c6d1286cbe0f")
+			(uuid "c0faa481-fc25-4f7a-9f1f-ba99227ef2ef")
 			(effects
 				(font
 					(size 1.27 1.27)

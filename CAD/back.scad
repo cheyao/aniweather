@@ -20,12 +20,12 @@ module case() {
 		translate([0, 0, WALL_THICKNESS + 0.0001]) PCB_Hole();
 
 		// Wemos
-		translate([CASE_WIDTH / 2, 5 - USB_WIDTH/2, USB_DEPTH/2])
-		cube([30, USB_WIDTH, USB_DEPTH], true);
+		translate([CASE_WIDTH / 2, 2 - USB_WIDTH/2, USB_DEPTH/2])
+		cube([30, USB_WIDTH + 5, USB_DEPTH], true);
 
 		// Battery
-		translate([-CASE_WIDTH / 2, 10 + USB_WIDTH/2, USB_DEPTH/2])
-		cube([30, USB_WIDTH, USB_DEPTH], true);
+		translate([-CASE_WIDTH / 2, 7.5 + USB_WIDTH/2, USB_DEPTH/2])
+		cube([30, USB_WIDTH + 5, USB_DEPTH], true);
 	}
 
 	// Saber!
@@ -41,5 +41,9 @@ translate([(PCB_WIDTH - 4) / 2 - SCREW_OFFSET, -(PCB_HEIGHT - 4) / 2 + SCREW_OFF
 translate([-(PCB_WIDTH - 4) / 2 + SCREW_OFFSET, (PCB_HEIGHT - 4) / 2 - SCREW_OFFSET, 0]) screw();
 translate([-(PCB_WIDTH - 4) / 2 + SCREW_OFFSET, -(PCB_HEIGHT - 4) / 2 + SCREW_OFFSET, 0]) screw();
 
-case();
+difference() {
+	case();
+
+	corners();
+}
 
