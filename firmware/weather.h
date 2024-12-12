@@ -3,6 +3,7 @@
 
 #include <Adafruit_ST7735.h>
 #include <Adafruit_GFX.h>
+#include <SD.h>
 
 #define SD_CS 8
 #define TFT_CS 10
@@ -25,6 +26,7 @@ class WeatherStation {
 	void connectWifi();
 
 	Adafruit_ST7735 tft;
+	time_t now;
 };
 
 #endif

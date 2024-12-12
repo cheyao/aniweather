@@ -10,10 +10,15 @@ WeatherStation::WeatherStation() : tft(Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST))
 	tft.fillScreen(ST77XX_BLACK);
 	Serial.println("Screen initialized");
 
+	SD.begin(SD_CS);
+	Serial.println("SD card initialized");
+
 	connectWifi();
 }
 
-WeatherStation::~WeatherStation() {}
+WeatherStation::~WeatherStation() {
+	// Cleanup!
+}
 
 void WeatherStation::connectWifi() {
 	Serial.println("Connecting to WiFi");
