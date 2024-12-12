@@ -3,6 +3,8 @@
 #include <SPI.h>
 #include <SD.h>
 
+#include "secerets.h"
+
 // https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-reference/peripherals/spi_master.html
 #define SD_CS 8
 #define TFT_CS 10
@@ -16,12 +18,18 @@
 #define LEFT_BUTTON 4
 #define RIGHT_BUTTON 5
 
+#define METEO_URL "https://api.open-meteo.com/v1/forecast?latitude=43.5513&longitude=7.0127&hourly=temperature_2m&forecast_days=1&models=meteofrance_seamless"
+
 // This should use the default spi pins
-Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 hw_timer_t *timer = NULL;
 volatile SemaphoreHandle_t timerSemaphore;
 volatile uint32_t lastIsrAt = 0;
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
+
+NetworkClient client;
+Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
+
+uint32_t lastFetch;
 
 void IRAM_ATTR rbutton() noexcept {
 }
@@ -39,27 +47,38 @@ void ARDUINO_ISR_ATTR onTimer() {
 
 void setup() {
 	Serial.begin(9600);
-	Serial.print("Aniweather booting up...");
+	Serial.println("Aniweather booting up...");
 
 	tft.initR(INITR_BLACKTAB);
-	Serial.print("Screen initialized");
+	Serial.println("Screen initialized");
 
 	// Clear screen
 	tft.fillScreen(ST77XX_BLACK);
-	Serial.print("Screen cleared");
+	Serial.println("Screen cleared");
 
 	SD.begin(SD_CS);
-	Serial.print("SD card initialized");
+	Serial.println("SD card initialized");
 
 	timerSemaphore = xSemaphoreCreateBinary();
 	timer = timerBegin(1000000);
 	timerAttachInterrupt(timer, &onTimer);
 	timerAlarm(timer, 1000000, true, 0);
-	Serial.print("Timer initialized");
+	Serial.println("Timer initialized");
 
 	attachInterrupt(digitalPinToInterrupt(LEFT_BUTTON), lbutton, FALLING);
 	attachInterrupt(digitalPinToInterrupt(RIGHT_BUTTON), rbutton, FALLING);
-	Serial.print("Interrupts initialized");
+	Serial.println("Interrupts initialized");
+
+	WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+	
+	while (WiFi.status() != WL_CONNECTED) {
+		delay(500);
+		Serial.print(".");
+	}
+
+	Serial.println("Wifi initialized");
+	Serial.println("IP address: ");
+	Serial.println(WiFi.localIP());
 }
 
 void loop() {
@@ -73,5 +92,7 @@ void loop() {
 		// Our time is updated
 		tft.fillScreen(ST77XX_BLACK);
 
+		// Lets try to get weather if it isn't cached
+		if (isrTime - 60 * 60 > )
 	}
 }
