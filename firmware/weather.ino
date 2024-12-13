@@ -1,9 +1,9 @@
-#include "weather.h"
+#include <Adafruit_ST7735.h>
+#include <Adafruit_GFX.h>
+#include <SD.h>
 
-#define METEO_URL "https://api.open-meteo.com/v1/forecast?latitude=43.5513&longitude=7.0127&hourly=temperature_2m&forecast_days=1&models=meteofrance_seamless"
-// Daily waifus!
-#define WAIFU_URL "https://api.waifu.im/search"
-#define WIFI_HOSTNAME "Aniweather"
+#include "weather.h"
+#include "settings.h"
 
 WeatherStation::WeatherStation() : tft(Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST)) {
 	tft.initR(INITR_BLACKTAB);
@@ -14,10 +14,29 @@ WeatherStation::WeatherStation() : tft(Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST))
 	Serial.println("SD card initialized");
 
 	connectWifi();
+
+	// This must be after then WiFi is set up
+	Serial.print("Updating time");
+	configTime(GMT_OFFSET, DAYLIGHT_OFFSET, NTP_SERVERS);
+
+	// We must wait till the time is correct
+	while ((now = time(nullptr)) < NTP_MIN_VALID_EPOCH) {
+		Serial.print(".");
+		delay(300);
+		yield();
+	}
+	Serial.println("Time configured");
+
+	Serial.printf("Local time: %s", asctime(localtime(&now)));
+	Serial.printf("UTC time:   %s", asctime(gmtime(&now)));
+
+	attachInterrupt(digitalPinToInterrupt(RIGHT_BUTTON), rbutton, FALLING);
+	attachInterrupt(digitalPinToInterrupt(LEFT_BUTTON), lbutton, FALLING);
+	Serial.println("Interrupts initialized");
 }
 
 WeatherStation::~WeatherStation() {
-	// Cleanup!
+	// Cleanup! (Nothing to do lol)
 }
 
 void WeatherStation::connectWifi() {
@@ -48,6 +67,14 @@ void WeatherStation::connectWifi() {
 
 	Serial.println("WiFi connected");
 	Serial.printf("IP address: %s/%s\n", WiFi.localIP().toString().c_str(), WiFi.subnetMask().toString().c_str());
-	Serial.printf("MAC address: %s/%s\n", WiFi.macAddress().c_str());
+	Serial.printf("MAC address: %s\n", WiFi.macAddress().c_str());
+}
+
+static void WeatherStation::rbutton() {
+	rpressed = true;
+}
+
+static void WeatherStation::lbutton() {
+	lpressed = true;
 }
 

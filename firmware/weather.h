@@ -5,17 +5,8 @@
 #include <Adafruit_GFX.h>
 #include <SD.h>
 
-#define SD_CS 8
-#define TFT_CS 10
-#define TFT_RST 3
-#define TFT_DC 1
-
-#define MISO 2
-#define MOSI 7
-#define SCK 6
-
-#define LEFT_BUTTON 4
-#define RIGHT_BUTTON 5
+volatile bool lpressed;
+volatile bool rpressed;
 
 class WeatherStation {
       public:
@@ -24,6 +15,8 @@ class WeatherStation {
 
       private:
 	void connectWifi();
+	static void rbutton();
+	static void lbutton();
 
 	Adafruit_ST7735 tft;
 	time_t now;
