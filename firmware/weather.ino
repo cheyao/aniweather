@@ -1,5 +1,7 @@
 #include <Adafruit_ST7735.h>
 #include <Adafruit_GFX.h>
+#include <WiFi.h>
+#include <SPI.h>
 #include <SD.h>
 
 #include "weather.h"
@@ -70,11 +72,47 @@ void WeatherStation::connectWifi() {
 	Serial.printf("MAC address: %s\n", WiFi.macAddress().c_str());
 }
 
-static void WeatherStation::rbutton() {
+void WeatherStation::loop() {
+	String readRequest = "GET " TEMPERATURE_ENDPOINT " HTTP/1.1\r\n" + "Host: " + METEO_URL + "\r\n"
+	+ "Connection: close\r\n\r\n";
+
+	if (!client.connect(METEO_URL, 80)) {
+		return;
+	}
+
+	client.print(readRequest);
+	String response = readResponse();
+	testdrawtext(response.c_str(), ST77XX_WHITE);
+
+	sleep(1000 * 60);
+}
+
+String WeatherStation::readResponse() {
+	unsigned long timeout = millis();
+	while (client.available() == 0) {
+		if (millis() - timeout > 5000) {
+			Serial.println("Client Timeout !");
+			client.stop();
+
+			return;
+		}
+	}
+
+	// Read all the lines of the reply from server and print them to Serial
+	String response;
+	while (client.available()) {
+		response += client.readStringUntil('\r');
+	}
+
+	Serial.println(response.c_str());
+	Serial.println("Closing connection");
+}
+
+void rbutton() {
 	rpressed = true;
 }
 
-static void WeatherStation::lbutton() {
+void lbutton() {
 	lpressed = true;
 }
 

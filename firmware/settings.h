@@ -14,9 +14,11 @@ static_assert(false, "Please create a file called secerects.h and define WIFI_SS
 #define NTP_SERVERS "pool.ntp.org"
 #define NTP_MIN_VALID_EPOCH 1533081600
 
-#define METEO_URL "https://api.open-meteo.com/v1/forecast?latitude=43.5513&longitude=7.0127&hourly=temperature_2m&forecast_days=1&models=meteofrance_seamless"
+#define METEO_URL "cyao.hackclub.app"
+#define TEMPERATURE_ENDPOINT "/weather"
 // Daily waifus!
-#define WAIFU_URL "https://api.waifu.im/search"
+#define WAIFU_URL "api.waifu.im"
+#define WAIFU_ENDPOINT "/search"
 
 #define SD_CS 8
 #define TFT_CS 10
