@@ -7,7 +7,7 @@
 	(title_block
 		(title "Aniweather")
 		(date "2024-12-05")
-		(rev "v1.6")
+		(rev "v1.7")
 		(company "Cyao")
 		(comment 1 "Anime weather station")
 	)
@@ -2702,6 +2702,12 @@
 		(uuid "a4120029-f0e8-4e38-aeed-eee1e98d552a")
 	)
 	(junction
+		(at 193.04 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00c0fe72-ee1d-47f4-95a1-ebbf6c073408")
+	)
+	(junction
 		(at 31.75 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2852,20 +2858,8 @@
 		(uuid "fea6a209-263b-4b56-bbe0-4d64b8e2ef84")
 	)
 	(no_connect
-		(at 245.11 27.94)
-		(uuid "06afc000-bd65-4047-9e6e-741b3f928119")
-	)
-	(no_connect
 		(at 55.88 39.37)
 		(uuid "95a9840c-8ad3-45ae-8ad5-19595c1a1950")
-	)
-	(no_connect
-		(at 83.82 46.99)
-		(uuid "aadcf268-178d-41f0-98e4-e4b55ced900f")
-	)
-	(no_connect
-		(at 245.11 30.48)
-		(uuid "cc8e844c-0d8e-4239-a853-cf5a4e7ae2af")
 	)
 	(no_connect
 		(at 55.88 29.21)
@@ -3795,6 +3789,50 @@
 			)
 		)
 	)
+	(global_label "VBUS"
+		(shape input)
+		(at 255.27 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "67988f34-0479-4003-927a-ed402ed18375")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 263.1538 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 83.82 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "749cf65c-3917-4b92-8033-c114e56e5176")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.7038 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MOSI"
 		(shape input)
 		(at 83.82 39.37 0)
@@ -3879,6 +3917,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 182.88 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a4db61bc-5ab8-450b-a907-56e6e9300da3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 174.9962 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4032,6 +4092,73 @@
 			(project "aniweather"
 				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 255.27 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "146ee676-b551-4288-aa15-a1ec508bcc7d")
+		(property "Reference" "#PWR022"
+			(at 261.62 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 259.08 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 255.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "528be52e-05da-4240-99e4-9dbe39c3bda0")
+		)
+		(instances
+			(project "aniweather"
+				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -4783,6 +4910,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 187.96 30.48 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e18f402-06c5-4d7a-8e9d-8996c3ab60eb")
+		(property "Reference" "JP4"
+			(at 189.738 23.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 195.58 25.654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 187.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 187.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d07c309d-bc38-4144-a0d9-41b7ea432877")
+		)
+		(pin "2"
+			(uuid "eeaf9c36-3e2f-479c-9a5c-9c21a0e0beb6")
+		)
+		(instances
+			(project "aniweather"
+				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
+					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 269.24 46.99 270)
 		(unit 1)
@@ -5140,6 +5336,75 @@
 			(project ""
 				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 250.19 30.48 180)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fb76ffc-cee3-4438-9be3-ca570ab4b738")
+		(property "Reference" "JP3"
+			(at 247.904 37.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 243.332 34.798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 250.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 250.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f891d845-57e2-445c-ab0d-3db816292539")
+		)
+		(pin "2"
+			(uuid "85fd53cb-f5b6-41fd-98ee-91cfc06985f6")
+		)
+		(instances
+			(project "aniweather"
+				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -6210,6 +6475,75 @@
 			(project ""
 				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 250.19 27.94 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab64aef7-a152-4de7-be82-23f410f4fb94")
+		(property "Reference" "JP2"
+			(at 251.968 21.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 257.81 23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 250.19 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 250.19 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd6afd0f-5760-4e16-b9ea-4b4543fc8766")
+		)
+		(pin "2"
+			(uuid "e5bd17ed-8f4f-432e-b185-bf4a1e2e9ca0")
+		)
+		(instances
+			(project "aniweather"
+				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
