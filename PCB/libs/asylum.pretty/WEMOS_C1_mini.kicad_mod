@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "39861e6a-7c07-4ca7-bddd-24c89dff0333")
+		(uuid "3e6d9c96-a95a-4cd2-bfc1-9a7293a42402")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -523,7 +523,7 @@
 		)
 		(polygon
 			(pts
-				(xy -12.78 -15.7) (xy 12.82 -15.7) (xy 12.82 -8.9) (xy -12.78 -8.9)
+				(xy -9 -15.7) (xy 8.5 -15.5) (xy 8.5 -8.9) (xy -9 -8.9)
 			)
 		)
 	)
