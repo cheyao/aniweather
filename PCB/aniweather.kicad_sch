@@ -2763,7 +2763,7 @@
 	)
 	(rectangle
 		(start 165.1 12.065)
-		(end 285.115 79.375)
+		(end 285.115 79.248)
 		(stroke
 			(width 0)
 			(type default)
@@ -2798,7 +2798,7 @@
 		(uuid 9a813829-7d65-4c2a-a609-d4e16357f51e)
 	)
 	(rectangle
-		(start 94.615 12.065)
+		(start 94.488 12.065)
 		(end 165.1 79.248)
 		(stroke
 			(width 0)
