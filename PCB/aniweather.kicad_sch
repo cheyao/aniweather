@@ -7,7 +7,7 @@
 	(title_block
 		(title "Aniweather")
 		(date "2024-12-05")
-		(rev "v1.8")
+		(rev "v1.9")
 		(company "Cyao")
 		(comment 1 "Anime weather station")
 	)
@@ -2876,10 +2876,22 @@
 		(uuid "00c0fe72-ee1d-47f4-95a1-ebbf6c073408")
 	)
 	(junction
+		(at 217.17 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0881af41-582c-43d7-ae3c-17b19fa2be07")
+	)
+	(junction
 		(at 31.75 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d61a700-3750-49f9-bff4-5dc18dc07fcb")
+	)
+	(junction
+		(at 209.55 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16e078f7-a63f-400c-9d03-25f32f71a66d")
 	)
 	(junction
 		(at 31.75 106.68)
@@ -3273,6 +3285,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 30.48) (xy 209.55 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50bba21e-07b6-43de-9744-a721e896ba51")
+	)
+	(wire
+		(pts
 			(xy 217.17 30.48) (xy 224.79 30.48)
 		)
 		(stroke
@@ -3480,6 +3502,16 @@
 			(type default)
 		)
 		(uuid "8d775de0-1a73-4d71-a56d-392c9b8bddfe")
+	)
+	(wire
+		(pts
+			(xy 217.17 30.48) (xy 217.17 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "915d7c68-f7ce-4764-bc12-0c1559fc4506")
 	)
 	(wire
 		(pts
@@ -4540,6 +4572,92 @@
 			(project ""
 				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 213.36 34.29 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fc7f573-a918-4df4-9b70-2c64e59a5afd")
+		(property "Reference" "D2"
+			(at 213.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 213.36 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 213.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 213.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 213.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 213.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c3a4121-a96c-4a64-9ab1-a7f4bf8eb213")
+		)
+		(pin "2"
+			(uuid "64905067-db19-45ba-89b4-fae37eb6e53f")
+		)
+		(instances
+			(project "aniweather"
+				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
+					(reference "D2")
 					(unit 1)
 				)
 			)
