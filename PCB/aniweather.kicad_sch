@@ -7,7 +7,7 @@
 	(title_block
 		(title "Aniweather")
 		(date "2024-12-05")
-		(rev "v1.9")
+		(rev "v1.10")
 		(company "Cyao")
 		(comment 1 "Anime weather station")
 	)
@@ -2821,7 +2821,7 @@
 	)
 	(text "Battery module"
 		(exclude_from_sim no)
-		(at 197.612 14.732 0)
+		(at 221.234 15.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4588,7 +4588,7 @@
 		(dnp no)
 		(uuid "1fc7f573-a918-4df4-9b70-2c64e59a5afd")
 		(property "Reference" "D2"
-			(at 213.36 40.64 0)
+			(at 216.154 35.814 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4596,7 +4596,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 213.36 38.1 0)
+			(at 216.154 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,7 +4741,7 @@
 		(dnp no)
 		(uuid "21faba16-144c-47e9-8d02-5ef1b8207cbf")
 		(property "Reference" "D1"
-			(at 213.36 36.83 0)
+			(at 215.9 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +4749,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 213.36 34.29 0)
+			(at 215.9 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
