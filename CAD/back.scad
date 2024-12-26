@@ -8,8 +8,8 @@ module screw() {
 	translate([0, 0, -PCB_DEPTH / 2 + WALL_THICKNESS - 0.0001])
 
 	difference() {
-		cylinder(h=SUPPORT_DEPTH, d=7);
-		cylinder(h=SUPPORT_DEPTH+2, d=3);
+		cylinder(h=SUPPORT_DEPTH, d=7, $fn=50);
+		cylinder(h=SUPPORT_DEPTH+2, d=3, $fn=50);
 	}
 }
 
@@ -29,13 +29,14 @@ module case() {
 
 		// Saber!
 		mirror([1,0,0])
-		resize(newsize=[CASE_WIDTH, CASE_HEIGHT, 0])
-		translate([0, 0, -CASE_FRONT_DEPTH/2 + 0.5 - 0.01])
+		resize(newsize=[CASE_WIDTH - 0.4, CASE_HEIGHT - 0.4, 0])
+		translate([-0.2, -0.2, -CASE_FRONT_DEPTH/2 + 0.5 - 0.04])
 		linear_extrude(height=1, center=true, convexity = 15)
-		import(file="saber.svg", center=true);
+		import(file="saber.svg", center=true, $fn=400);
 	}
 }
 
+union() {
 translate([(PCB_WIDTH - 4) / 2 - SCREW_OFFSET, (PCB_HEIGHT - 4) / 2 - SCREW_OFFSET, 0]) screw();
 translate([(PCB_WIDTH - 4) / 2 - SCREW_OFFSET, -(PCB_HEIGHT - 4) / 2 + SCREW_OFFSET, 0]) screw();
 translate([-(PCB_WIDTH - 4) / 2 + SCREW_OFFSET, (PCB_HEIGHT - 4) / 2 - SCREW_OFFSET, 0]) screw();
@@ -45,5 +46,6 @@ difference() {
 	case();
 
 	corners();
+}
 }
 

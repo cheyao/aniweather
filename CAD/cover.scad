@@ -6,7 +6,7 @@ SWITCH_WIDTH = 6.4;
 module screw() {
 	translate([0, 0, -PCB_DEPTH / 2 + WALL_THICKNESS - 0.0001])
 
-	cylinder(h=SUPPORT_DEPTH+99999, d=3);
+	cylinder(h=SUPPORT_DEPTH+99999, d=3, $fn=50);
 }
 
 module main() {
