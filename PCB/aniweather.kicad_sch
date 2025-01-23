@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20241004)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.99")
+	(generator_version "9.0")
 	(uuid "e7e4d5de-a607-486c-961b-1d24c88fafef")
 	(paper "A4")
 	(title_block
@@ -7205,7 +7205,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
+		(property "Footprint" "asylum:NR3015T2R2M"
 			(at 219.71 62.23 0)
 			(effects
 				(font
