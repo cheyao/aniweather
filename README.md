@@ -11,3 +11,23 @@ Made for #asylum. The main API code is at https://github.com/cheyao/short with n
 
 To change the settings, edit `firmware/settings.h`! The weather info is mostly parsed on nest.
 
+[ x ] I ran DRC in KiCad and have made sure there are 0 errors!
+
+### BOM 
+Provided by dari // alex:
+- 1x WeMos S2 Mini (as a cheaper replacement for the S2) WITHOUT FEMALE HEADERS
+- 1x ST7735 1.8" LCD display WITHOUT FEMALE HEADERS. Male headers soldered!
+
+Purchasing from HQ:
+- 2x 1N4148 at ???$
+
+I will be sourcing the following parts with my grant:
+- 1x PCB from JLCPCB
+    - $2 for 5x + $1.50 shipping
+- 2x 2-1825910-7             0,17 $ - 0,51 $
+- 1x NR3015T2R2M             0,31 $ - 0,31 $ 
+- 4x FG16X7R1E106KRT06       0,84 $ - 3,36 $
+- 1x TPS63001DRCR            2,16 $ - 2,16 $
+- 1x 3D printed case         self print
+
+Total: 8.34 $ + Lipo from aliexpress
