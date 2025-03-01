@@ -3797,6 +3797,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 67.31) (xy 83.82 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6912dd41-8e6d-43b7-9b35-c84bc04cafd3")
+	)
+	(wire
+		(pts
 			(xy 115.57 106.68) (xy 115.57 109.22)
 		)
 		(stroke
@@ -4247,6 +4257,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 58.42) (xy 83.82 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edbb9486-9a86-4f82-b9d4-e64c17247600")
+	)
+	(wire
+		(pts
 			(xy 215.9 114.3) (xy 215.9 109.22)
 		)
 		(stroke
@@ -4545,24 +4565,24 @@
 			)
 		)
 	)
-	(global_label "MOSI"
+	(global_label "MISO"
 		(shape input)
-		(at 83.82 39.37 0)
+		(at 83.82 69.85 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "7c0d97f4-2030-4992-a128-933e82ab0f3d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.4014 39.37 0)
+			(at 83.82 77.4314 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4591,6 +4611,28 @@
 	)
 	(global_label "MISO"
 		(shape input)
+		(at 83.82 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7f5cc525-f519-4f15-9af7-6d0898c3c57e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.4014 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOSI"
+		(shape input)
 		(at 41.91 34.29 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4599,7 +4641,7 @@
 			)
 			(justify right)
 		)
-		(uuid "7f5cc525-f519-4f15-9af7-6d0898c3c57e")
+		(uuid "8f62b78e-4460-449e-a300-aed22601b0b0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 34.3286 34.29 0)
 			(effects
@@ -6874,6 +6916,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 44.45 27.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92f3b141-698f-4bd4-bc89-cbbbf10de2dc")
+		(property "Reference" "R10"
+			(at 40.894 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 40.894 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 46.228 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a475f19-9f2c-425d-83f7-253008e4ae55")
+		)
+		(pin "2"
+			(uuid "fdf9cce6-1a28-4691-97a6-a9f13213930f")
+		)
+		(instances
+			(project "aniweather"
+				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 83.82 44.45 90)
 		(unit 1)
@@ -8510,7 +8619,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 44.45 27.94 180)
+		(at 83.82 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8518,7 +8627,7 @@
 		(dnp no)
 		(uuid "dc6daa9f-9da1-4dcb-b8be-12b10a633cc1")
 		(property "Reference" "R7"
-			(at 41.91 28.956 0)
+			(at 81.28 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8526,7 +8635,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 40.894 26.67 0)
+			(at 80.264 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8534,7 +8643,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 46.228 27.94 90)
+			(at 85.598 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8543,7 +8652,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 27.94 0)
+			(at 83.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8552,7 +8661,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 44.45 27.94 0)
+			(at 83.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8637,6 +8746,72 @@
 			(project "aniweather"
 				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 83.82 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e266d26f-47a6-4488-87c2-edaaf76507b5")
+		(property "Reference" "#PWR026"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 83.82 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 83.82 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f6821b7-67e8-4754-abd3-e9d97bff6937")
+		)
+		(instances
+			(project "aniweather"
+				(path "/e7e4d5de-a607-486c-961b-1d24c88fafef"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
